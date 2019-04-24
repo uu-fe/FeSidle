@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-  <a href="https://github.com/fewalksideways/FeSidle"><img src="https://i.loli.net/2019/04/24/5cc00746c981f.png" width=120"></a>
+  <a href="https://github.com/fewalksideways/FeSidle"><img src="https://i.loli.net/2019/04/24/5cc00746c981f.png" width=80"></a>
   <br>
     <br>
 FE横着走</h1>
