@@ -1,11 +1,16 @@
 * [介绍](zh-cn/index)
 * JS
-    * [扫盲](zh-cn/update) 
-    * [进阶](zh-cn/update) 
-    * [算法](zh-cn/update) 
+    * 扫盲
+      * [类型判断](zh-cn/typeof) 
+    * 进阶 
+      * [闭包](zh-cn/closures)  
+      * [数组去重](zh-cn/repetition) 
 * Node
     * [扫盲](zh-cn/update) 
 * HTML
     * [扫盲](zh-cn/update) 
 * CSS 
     * [扫盲](zh-cn/update)
+* Github
+    * [blog](zh-cn/blog)
+    * [GitTalk](zh-cn/gittalk)

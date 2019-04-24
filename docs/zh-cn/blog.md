@@ -16,7 +16,7 @@
 ```
 npm config set registry http://registry.npmjs.org
 ```  
-### 登陆  
+## 登陆  
 在Git终端登陆  
 ```
 npm login  
@@ -25,11 +25,11 @@ Password:****
 Email:*****  
 
 ```  
-### 发布  
+## 发布  
 ```
 npm publish
 ```
-### 忽略目录
+## 忽略目录
 `.npmignore`  
 ```
 examples/
