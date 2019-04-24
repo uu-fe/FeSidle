@@ -3,10 +3,13 @@
     * [扫盲](zh-cn/update) 
     * 进阶 
       * [闭包](zh-cn/closures)  
-      * [去重](zh-cn/repetition) 
+      * [数组去重](zh-cn/repetition) 
 * Node
     * [扫盲](zh-cn/update) 
 * HTML
     * [扫盲](zh-cn/update) 
 * CSS 
     * [扫盲](zh-cn/update)
+* Github
+    * [blog](zh-cn/blog)
+    * [GitTalk](zh-cn/gittalk)
