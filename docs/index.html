@@ -93,24 +93,24 @@
       }
       return params;
     }
-    // setTimeout(() => {
-    //   let hash = window.$docsify.homepage;
-    //   // console.log(window.$docsify.homepage, '**********')
-    //   let gittalkHtml = document.createElement('div');
-    //   gittalkHtml.id = 'gitalk-container';
-    //   let docMain = document.getElementById('main').appendChild(gittalkHtml);
-    //   const gitalk = new Gitalk({
-    //     clientID: '2aa2d41adb8b106ec843',
-    //     clientSecret: 'b321753c78115b1d8889cbf1033d7e6ff987ad09',
-    //     repo: 'JsSidle.github.io',
-    //     owner: 'MaleWeb',
-    //     admin: ['MaleWeb'],
-    //     id: 'JsSidle'+hash,
-    //     // facebook-like distraction free mode
-    //     distractionFreeMode: false
-    //   })
-    //   gitalk.render('gitalk-container');
-    // }, 800)
+    setTimeout(() => {
+      let hash = window.$docsify.homepage;
+      // console.log(window.$docsify.homepage, '**********')
+      let gittalkHtml = document.createElement('div');
+      gittalkHtml.id = 'gitalk-container';
+      let docMain = document.getElementById('main').appendChild(gittalkHtml);
+      const gitalk = new Gitalk({
+        clientID: '2aa2d41adb8b106ec843',
+        clientSecret: 'b321753c78115b1d8889cbf1033d7e6ff987ad09',
+        repo: 'JsSidle.github.io',
+        owner: 'MaleWeb',
+        admin: ['MaleWeb'],
+        id: location.pathname,
+        // facebook-like distraction free mode
+        distractionFreeMode: false
+      })
+      gitalk.render('gitalk-container');
+    }, 800)
 
 
   </script>
