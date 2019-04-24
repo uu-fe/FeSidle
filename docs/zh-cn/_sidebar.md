@@ -1,8 +1,9 @@
 * [介绍](zh-cn/index)
 * JS
     * [扫盲](zh-cn/update) 
-    * [进阶](zh-cn/update) 
-    * [算法](zh-cn/update) 
+    * 进阶 
+      * [闭包](zh-cn/closures)  
+      * [去重](zh-cn/repetition) 
 * Node
     * [扫盲](zh-cn/update) 
 * HTML

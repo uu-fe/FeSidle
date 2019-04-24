@@ -46,6 +46,16 @@
 
 - MySQL
   
-  # 
-  
-  # 
+### Star
+
+本地预览  [使用文档](https://github.com/docsifyjs/docsify-cli)
+
+```js
+ npm install docsify-cli
+```
+初始化项目  
+
+```js
+docsify init ./docs
+```  
+这样就可以愉快的写文章了
