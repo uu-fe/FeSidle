@@ -1,4 +1,4 @@
-* [介绍](zh-cn/index)
+* [介绍](../../README)
 * JS
     * [扫盲](zh-cn/update) 
     * [进阶](zh-cn/update) 
