@@ -1,10 +1,12 @@
 language: node_js
 sudo: required
 node_js:
-  - 8.11.1
+  - 8.11.3
+branch: master
 cache:
   directories:
     - node_modules
+before_install:
+  - export TZ='Asia/Shanghai'  # 设置时区
 script:
-    - ./deploy.sh
-branch: master
+  - ./deploy.sh
