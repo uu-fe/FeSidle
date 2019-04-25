@@ -27,7 +27,7 @@ git commit -m 'deploy'
 
 #添加travis持续集成
 
-git push -f https://${my_token}@github.com/fewalksideways/FeSidle.git master:gh-pages
+git push -f https://${access_token}@github.com/fewalksideways/FeSidle.git master:gh-pages
 
 
 cd -
