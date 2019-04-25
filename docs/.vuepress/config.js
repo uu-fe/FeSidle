@@ -2,7 +2,7 @@ module.exports = {
     title: 'FeSidle',
     description: 'Just playing around',
     base: '/docs/',
-    dest: './dist',
+    dest: './dist/',
     head: [
         ['link', { rel: 'icon', href: '../../images/logo.png' }]
     ],
