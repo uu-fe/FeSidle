@@ -20,7 +20,9 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
+let access_token = "6ljH3PgKi4CiT6RWDRtSNw";
 # git push -f https://${access_token}@github.com/fewalksideways/FeSidle.git master:gh-pages  
+
 git push -f git@github.com:fewalksideways/FeSidle.git master:gh-pages
 
 cd -
