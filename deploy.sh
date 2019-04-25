@@ -16,8 +16,8 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git config --local user.name "Male"
-git config --local user.email "896226896@qq.com"
+# git config --local user.name "Male"
+# git config --local user.email "896226896@qq.com"
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
@@ -27,7 +27,7 @@ git config --local user.email "896226896@qq.com"
 
 #添加travis持续集成
 
-git push -f https://${my_token}@github.com/<USERNAME>/<REPO>.git master:gh-pages
+git push -f https://${my_token}@github.com/fewalksideways/FeSidle.git master:gh-pages
 
 
 cd -
