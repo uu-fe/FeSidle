@@ -2,10 +2,10 @@ module.exports = {
     title: 'FeSidle',
     description: 'Just playing around',
     base: '/docs/',
+    dest: 'dist',
     head: [
         ['link', { rel: 'icon', href: '../../images/logo.png' }]
     ],
-    dest: "./dist",
     themeConfig: {
         // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
         repo: 'vuejs/vuepress',
