@@ -15,7 +15,7 @@
       const gitalk = new Gitalk({
         clientID: '1b55b3c86a38eceef98c',
         clientSecret: 'c1d4977d8ccd8001a0123e482f806e2fff9ba8ee',
-        repo: 'FeSilde',
+        repo: 'https://fewalksideways.github.io/FeSidle/',
         owner: 'MaleWeb',
         admin: ['MaleWeb'],
         id: location.pathname, // Ensure uniqueness and length less than 50
