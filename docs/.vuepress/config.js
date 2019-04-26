@@ -14,7 +14,7 @@ module.exports = {
         repoLabel: '查看源码',
 
         // 以下为可选的编辑链接选项
-        
+
         // 假如文档放在一个特定的分支下：
         docsBranch: 'gh-pages',
         // 默认是 false, 设置为 true 来启用
@@ -22,11 +22,12 @@ module.exports = {
         // 默认为 "Edit this page"
         editLinkText: '帮助我们改善此页面！',
         nav: [
-            { text: 'Js', link: '/zh-cn/joinus' },
+            { text: 'Js', link: '/zh-cn/javascript/index' },
+            { text: 'Blog', link: '/zh-cn/blog/index' },
         ],
         // 为以下路由添加侧边栏
-        sidebar: ['/'],
-        activeHeaderLinks:false,
+        sidebar: 'auto',
+        activeHeaderLinks: false,
         //Algolia 搜索
         // algolia: {
         //     apiKey: '<API_KEY>',
