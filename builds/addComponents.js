@@ -5,7 +5,7 @@ const rootDir = './docs'
 findMarkdown(rootDir, writeComponents)
 
 function writeComponents(dir) {
-  fs.appendFile(dir, `\n \n <gitalk-gitalk/> \n `, (err) => {
+  fs.appendFile(dir, `\n \n <gitalk/> \n `, (err) => {
     if (err) throw err
     console.log(`add components to ${dir}`)
   })
