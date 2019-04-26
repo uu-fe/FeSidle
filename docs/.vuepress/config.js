@@ -26,7 +26,13 @@ module.exports = {
             { text: 'Blog', link: '/zh-cn/blog/index' },
         ],
         // 为以下路由添加侧边栏
-        sidebar: 'auto',
+        '/zh/':{
+            sidebar:{
+                '/blog/':[
+                    'gitalk',
+                ]
+            }
+        },
         activeHeaderLinks: false,
         //Algolia 搜索
         // algolia: {

@@ -1,9 +1,9 @@
 
-<h2 align="center">
+<p align="center">
 <br>
   <img :src="$withBase('images/logo.png')" width="80" />
   <br>
-FeSidle</h2>
+</p>
 
 
 
