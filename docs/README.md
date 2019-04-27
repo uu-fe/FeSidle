@@ -1,10 +1,10 @@
-
-<p align="center">
-<br>
-  <img :src="$withBase('images/logo.png')" width="80" />
-  <br>
-</p>
-
+---
+home: true
+heroImage: images/logo.png
+actionText: 快速上手 →
+actionLink: /js/
+footer: MIT Licensed | Copyright © 2019 Designer Male
+---
 
 
 ## 简介

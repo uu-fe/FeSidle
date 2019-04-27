@@ -28,49 +28,39 @@ module.exports = {
         //     indexName: '<INDEX_NAME>'
         //   }
         lastUpdated: '上次提交',
-        '/zh/': {
-            label: '简体中文',
-            selectText: '选择语言',
-            editLinkText: '在 GitHub 上编辑此页',
-            lastUpdated: '上次更新',
-            nav: [
-                {
-                    text: 'Js',
-                    link: '/zh/js/',
-                },
-                {
-                    text: 'Blog',
-                    link: '/zh/blog/'
-                },
-                {
-                    text: '默认主题',
-                    link: '/zh/default-theme-config/'
-                },
-                {
-                    text: 'Changelog',
-                    link: 'https://github.com/vuejs/vuepress/blob/0.x/CHANGELOG.md'
-                },
-                {
-                    text: '1.x',
-                    link: 'https://v1.vuepress.vuejs.org/'
-                },
-            ],
-            sidebar: {
-                '/zh/js/': genSidebarConfig('Js')
-            }
+        nav: [
+            {
+                text: 'Js',
+                link: '/js/',
+            },
+            {
+                text: 'Blog',
+                link: '/blog/'
+            },
+            {
+                text: 'Node',
+                link: '/node/'
+            },
+            {
+                text: 'Plugin',
+                link: '/plugin/'
+            },
+        ],
+        sidebar: {
+            '/js/': genSidebarConfig('Js')
         }
 
-    }
+    },
 }
-function genSidebarConfig (title) {
+function genSidebarConfig(title) {
     return [
-      {
-        title,
-        collapsable: false,
-        children: [
-          '',
-          'js'
-        ]
-      }
+        {
+            title,
+            collapsable: false,
+            children: [
+                '',
+                'befe'
+            ]
+        }
     ]
-  }
+}
