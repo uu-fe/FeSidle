@@ -2,7 +2,7 @@
 
 ---
 
-[MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures)：闭包是函数和声明该函数的词法环境的组合；不好理解，看代码
+[MDN](https://developer.mozilla.org/zh-cn/docs/Web/JavaScript/Closures)：闭包是函数和声明该函数的词法环境的组合；不好理解，看代码
 
 ```javascript
 function sidle(){

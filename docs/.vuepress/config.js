@@ -4,7 +4,7 @@ module.exports = {
     base: '/FeSidle/',
     dest: './dist',
     head: [
-        ['link', { rel: 'icon', href: './public/images/logo.png' }]
+        ['link', { rel: 'icon', href: `/images/logo.png` }]
     ],
     themeConfig: {
         // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
@@ -21,18 +21,6 @@ module.exports = {
         editLinks: true,
         // 默认为 "Edit this page"
         editLinkText: '帮助我们改善此页面！',
-        nav: [
-            { text: 'Js', link: '/zh-cn/javascript/index' },
-            { text: 'Blog', link: '/zh-cn/blog/index' },
-        ],
-        // 为以下路由添加侧边栏
-        '/zh/':{
-            sidebar:{
-                '/blog/':[
-                    'gitalk',
-                ]
-            }
-        },
         activeHeaderLinks: false,
         //Algolia 搜索
         // algolia: {
@@ -40,7 +28,49 @@ module.exports = {
         //     indexName: '<INDEX_NAME>'
         //   }
         lastUpdated: '上次提交',
-
+        '/zh/': {
+            label: '简体中文',
+            selectText: '选择语言',
+            editLinkText: '在 GitHub 上编辑此页',
+            lastUpdated: '上次更新',
+            nav: [
+                {
+                    text: 'Js',
+                    link: '/zh/js/',
+                },
+                {
+                    text: 'Blog',
+                    link: '/zh/blog/'
+                },
+                {
+                    text: '默认主题',
+                    link: '/zh/default-theme-config/'
+                },
+                {
+                    text: 'Changelog',
+                    link: 'https://github.com/vuejs/vuepress/blob/0.x/CHANGELOG.md'
+                },
+                {
+                    text: '1.x',
+                    link: 'https://v1.vuepress.vuejs.org/'
+                },
+            ],
+            sidebar: {
+                '/zh/js/': genSidebarConfig('Js')
+            }
+        }
 
     }
 }
+function genSidebarConfig (title) {
+    return [
+      {
+        title,
+        collapsable: false,
+        children: [
+          '',
+          'js'
+        ]
+      }
+    ]
+  }

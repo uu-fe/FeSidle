@@ -34,7 +34,7 @@ Don't stop studying，享受coding，才是我们码农真正的快乐
 
 钉钉群
 
-<img :src="$withBase('images/ding.jpg')" width="140" /> 
+<img :src="$withBase('images/ding.JPG')" width="140" /> 
 
 
 

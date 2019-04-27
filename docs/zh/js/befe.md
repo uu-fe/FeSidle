@@ -633,7 +633,7 @@ sidebar: auto
 
 - `JavaScript`数据结构和算法：[https://github.com/ConardLi/awesome-coding-js](https://github.com/ConardLi/awesome-coding-js)
 
-- `30-seconds-of-code`（里面有很多`js`代码非常巧妙，我正在将它翻译成中文）：[https://github.com/ConardLi/30-seconds-of-code-Zh-CN](https://github.com/ConardLi/30-seconds-of-code-Zh-CN)
+- `30-seconds-of-code`（里面有很多`js`代码非常巧妙，我正在将它翻译成中文）：[https://github.com/ConardLi/30-seconds-of-code-zh](https://github.com/ConardLi/30-seconds-of-code-zh)
 
 
 ### 运行环境
@@ -680,7 +680,7 @@ sidebar: auto
 
 - 廖雪峰的`git`教程：[https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
--  图解`Git`：[https://marklodato.github.io/visual-git-guide/index-zh-cn.html](https://marklodato.github.io/visual-git-guide/index-zh-cn.html)
+-  图解`Git`：[https://marklodato.github.io/visual-git-guide/index-zh.html](https://marklodato.github.io/visual-git-guide/index-zh.html)
 
 - 前端开发者必备的`Nginx`知识：[https://juejin.im/post/5c85a64d6fb9a04a0e2e038c](https://juejin.im/post/5c85a64d6fb9a04a0e2e038c)
 
