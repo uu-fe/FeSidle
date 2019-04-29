@@ -45,6 +45,10 @@ module.exports = {
                 text: 'Plugin',
                 link: '/plugin/'
             },
+            {
+                text:'CSS3',
+                link:'/css3/'
+            }
         ],
         sidebar: {
             '/js/': genSidebarConfig('Js'),
@@ -52,7 +56,8 @@ module.exports = {
                 '',
                 'gitalk',
                 'travis'
-            ]
+            ],
+            '/css3/':['']
         }
 
     },
