@@ -47,7 +47,12 @@ module.exports = {
             },
         ],
         sidebar: {
-            '/js/': genSidebarConfig('Js')
+            '/js/': genSidebarConfig('Js'),
+            '/blog/':[
+                '',
+                'gitalk',
+                'travis'
+            ]
         }
 
     },

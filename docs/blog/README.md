@@ -1,6 +1,7 @@
 ---
 sidebar:auto
----
+---  
+
 # Github 
 ## 漂亮的图标
 ![](https://img.shields.io/badge/npm-0.2.0-brightgreen.svg) ![](https://img.shields.io/badge/license-MIT-blue.svg)  
