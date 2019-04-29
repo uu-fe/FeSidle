@@ -69,7 +69,10 @@ function genSidebarConfig(title) {
             collapsable: false,
             children: [
                 '',
-                'befe'
+                'befe',
+                'closures',
+                'typeof',
+                'repetition'
             ]
         }
     ]

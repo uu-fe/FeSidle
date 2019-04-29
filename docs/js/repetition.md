@@ -1,4 +1,5 @@
 
+# 数组去重
 !> new Set  
 
 ES6中新增了Set数据结构，类似于数组，但是它的成员都是唯一的，其构造函数可以接受一个数组作为参数  
@@ -20,7 +21,7 @@ let arr2 = Array.from(set);
 console.log(arr2) //=> [1,2,4,5]
 ```
 
-### ES6方法
+## ES6方法
 
 借用上面的例子可实现一行代码去重  
 
@@ -29,7 +30,7 @@ let array = Array.from(new Set([1,2,2,2,1,3]));
 console.log(array) //[1,2,3]
 ```
 
-### ES5方法
+## ES5方法
 
 Es5实现数组去重（过滤NaN）
 
@@ -54,7 +55,7 @@ Array.prototype.uniq = function(){
 arr1.uniq();
 ```
 
-### ES6 数据对象去重
+## ES6 数据对象去重
 
 ---
 
