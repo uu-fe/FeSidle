@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: images/logo.png
-actionText: 快速上手 →
+actionText: START
 actionLink: /js/
 footer: MIT Licensed | Copyright © 2019 Designer Male
 ---
@@ -9,7 +9,6 @@ footer: MIT Licensed | Copyright © 2019 Designer Male
 
 ## 简介
 
-一个来自6年研发经验，身处挪坑徘徊期，抚摸天花板度日的前端心声。  
 如何保值？如何深入?选择方向？沉淀技术？投身管理？...  
 手撸过全栈，玩转过PHP，研究过框架，折腾过Node，解决过功效，手撸过软件...  
 玩过掘金，玩过知乎，最终还是回到GitHub  

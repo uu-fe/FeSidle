@@ -3,7 +3,7 @@
  > 非常流行的开源持续集成构建项目，和GO的区别采用`yaml`格式，清新简洁。广受Github基友喜爱。  
 
  今天讲一下，FeSidle使用的Travis CI的事；  
- 
+
 ![travis](https://i.loli.net/2019/04/29/5cc69cfa9e4f4.png)  
 
 ![构建记录](https://i.loli.net/2019/04/29/5cc69d4628029.png)  
@@ -32,7 +32,7 @@
  
 ## 创建配置脚本  
 
-> //项目根目录创建deploy.sh文件
+> 项目根目录创建deploy.sh文件
 ```
 
 #!/usr/bin/env sh
@@ -69,7 +69,7 @@ cd -
 
 ## 创建执行脚本  
 
-> //项目根目录创建travis.yml执行脚本
+> 项目根目录创建travis.yml执行脚本
 ```
 language: node_js
 sudo: required
@@ -103,7 +103,9 @@ git update-index --add --cnmod=+x deploy.sh
 
 - 修改package.json 可以通过命令直接上传 vuepress推荐  
   
-- [vuepress添加评论插件](./gitalk.md)
+- [gitalk](https://fewalksideways.github.io/FeSidle/blog/gitalk.html)  
+
+- [vuepress增加gitalk](https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6)  目前为止比较优雅的方式
 
 
 
