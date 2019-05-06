@@ -46,18 +46,22 @@ module.exports = {
                 link: '/plugin/'
             },
             {
-                text:'CSS3',
-                link:'/css3/'
+                text: 'CSS3',
+                link: '/css3/'
             }
         ],
         sidebar: {
             '/js/': genSidebarConfig('Js'),
-            '/blog/':[
+            '/blog/': [
                 '',
                 'gitalk',
                 'travis'
             ],
-            '/css3/':['']
+            '/css3/': ['',
+                'Grid布局',
+                '布局和包含块',
+                '优先级继承和级联'
+            ]
         }
 
     },
