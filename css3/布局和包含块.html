@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>4. 布局和包含块（Layout and The Containing Block） | FeSidle</title>
+    <meta name="description" content="Learn this lesson and you can walk sideways in the front end ">
+    <link rel="icon" href="/FeSidle/images/logo.png">
+    
+    <link rel="preload" href="/FeSidle/assets/css/0.styles.6b660774.css" as="style"><link rel="preload" href="/FeSidle/assets/js/app.69001117.js" as="script"><link rel="preload" href="/FeSidle/assets/js/5.3f320389.js" as="script"><link rel="preload" href="/FeSidle/assets/js/7.6dfd3fe3.js" as="script"><link rel="prefetch" href="/FeSidle/assets/js/10.ab4aaee7.js"><link rel="prefetch" href="/FeSidle/assets/js/11.579c3f88.js"><link rel="prefetch" href="/FeSidle/assets/js/12.92961eca.js"><link rel="prefetch" href="/FeSidle/assets/js/13.b3a31fca.js"><link rel="prefetch" href="/FeSidle/assets/js/14.d14fc1e5.js"><link rel="prefetch" href="/FeSidle/assets/js/15.faedb47f.js"><link rel="prefetch" href="/FeSidle/assets/js/16.48f8c4dc.js"><link rel="prefetch" href="/FeSidle/assets/js/17.b3d4e56e.js"><link rel="prefetch" href="/FeSidle/assets/js/18.0047aa6a.js"><link rel="prefetch" href="/FeSidle/assets/js/19.b71cd06a.js"><link rel="prefetch" href="/FeSidle/assets/js/2.c1cf635c.js"><link rel="prefetch" href="/FeSidle/assets/js/20.04e0af3e.js"><link rel="prefetch" href="/FeSidle/assets/js/21.def3fcfb.js"><link rel="prefetch" href="/FeSidle/assets/js/22.2379009c.js"><link rel="prefetch" href="/FeSidle/assets/js/23.723f8613.js"><link rel="prefetch" href="/FeSidle/assets/js/24.516d38e9.js"><link rel="prefetch" href="/FeSidle/assets/js/3.72ea90eb.js"><link rel="prefetch" href="/FeSidle/assets/js/4.90545065.js"><link rel="prefetch" href="/FeSidle/assets/js/6.9f2d11ff.js"><link rel="prefetch" href="/FeSidle/assets/js/8.f7c60f13.js"><link rel="prefetch" href="/FeSidle/assets/js/9.abaae142.js">
+    <link rel="stylesheet" href="/FeSidle/assets/css/0.styles.6b660774.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/FeSidle/" class="home-link router-link-active"><!----> <span class="site-name">FeSidle</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/FeSidle/js/" class="nav-link">Js</a></div><div class="nav-item"><a href="/FeSidle/blog/" class="nav-link">Blog</a></div><div class="nav-item"><a href="/FeSidle/node/" class="nav-link">Node</a></div><div class="nav-item"><a href="/FeSidle/plugin/" class="nav-link">Plugin</a></div><div class="nav-item"><a href="/FeSidle/css3/" class="nav-link router-link-active">CSS3</a></div> <a href="https://github.com/fewalksideways/FeSidle" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/FeSidle/js/" class="nav-link">Js</a></div><div class="nav-item"><a href="/FeSidle/blog/" class="nav-link">Blog</a></div><div class="nav-item"><a href="/FeSidle/node/" class="nav-link">Node</a></div><div class="nav-item"><a href="/FeSidle/plugin/" class="nav-link">Plugin</a></div><div class="nav-item"><a href="/FeSidle/css3/" class="nav-link router-link-active">CSS3</a></div> <a href="https://github.com/fewalksideways/FeSidle" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/FeSidle/css3/" class="sidebar-link">贡献者：chouchou</a></li><li><a href="/FeSidle/css3/Grid布局.html" class="sidebar-link">1 Grid 布局</a></li><li><a href="/FeSidle/css3/布局和包含块.html" class="active sidebar-link">4. 布局和包含块（Layout and The Containing Block）</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/FeSidle/css3/布局和包含块.html#_1-概念" class="sidebar-link">1 概念</a></li><li class="sidebar-sub-header"><a href="/FeSidle/css3/布局和包含块.html#_2-包含块的影响" class="sidebar-link">2 包含块的影响</a></li><li class="sidebar-sub-header"><a href="/FeSidle/css3/布局和包含块.html#_3-确定包含块" class="sidebar-link">3 确定包含块</a></li><li class="sidebar-sub-header"><a href="/FeSidle/css3/布局和包含块.html#_4-从包含块计算百分比" class="sidebar-link">4 从包含块计算百分比</a></li><li class="sidebar-sub-header"><a href="/FeSidle/css3/布局和包含块.html#_5-实践测试" class="sidebar-link">5 实践测试</a></li></ul></li><li><a href="/FeSidle/css3/优先级继承和级联.html" class="sidebar-link">2 优先级、继承和级联</a></li><li><a href="/FeSidle/css3/视觉格式化模型.html" class="sidebar-link">8 视觉格式化模型（Visual formatting model）</a></li></ul> </div> <div class="page"> <div class="content"><h1 id="_4-布局和包含块（layout-and-the-containing-block）"><a href="#_4-布局和包含块（layout-and-the-containing-block）" aria-hidden="true" class="header-anchor">#</a> 4. 布局和包含块（Layout and The Containing Block）</h1> <h2 id="_1-概念"><a href="#_1-概念" aria-hidden="true" class="header-anchor">#</a> 1 概念</h2> <ol><li><p>定义：一个元素的尺寸和位置经常受 <strong>包含块（The Containing Block）</strong> 影响。大多数情况下，<strong>包含块(The Containing Block)</strong> 就是这个元素最近的祖先 <strong>块级元素(Block Level)</strong> 的 <strong>内容区(Content Area)</strong>，但也不总是这样</p></li> <li><p>示例图：当浏览器展示一个文档的时候，每一个元素都会生成一个盒子。每个盒子都被划分成四个区域</p> <ul><li>内容区(Content Area)</li> <li>填充区(Padding Area)</li> <li>边界区(Border Area)</li> <li>隔离区(Margin Area)：意为元素的隔离间隙
+<img src="/FeSidle/assets/img/15427013565705.2dc949b8.jpg" alt="-w433"></li></ul></li></ol> <p>误区理解：</p> <ol><li>很多开发者认为 <strong>一个元素的包含块</strong> 就是 <strong>它父元素的内容区</strong>，但事实并非如此</li></ol> <h2 id="_2-包含块的影响"><a href="#_2-包含块的影响" aria-hidden="true" class="header-anchor">#</a> 2 包含块的影响</h2> <p>元素的尺寸和位置常常受它的包含块的影响。对于一些 CSS 属性，如 width、height、padding、height、绝对定位元素(position 被设置为 absolute 或 fixed)的偏移值，<strong>我们对这些属性设置为 百分比 时</strong>，这些值的计算值是由元素的包含块决定</p> <h2 id="_3-确定包含块"><a href="#_3-确定包含块" aria-hidden="true" class="header-anchor">#</a> 3 确定包含块</h2> <ul><li><p>方法：确定<strong>一个元素的包含块</strong>的过程完全依赖于<strong>这个元素的 position 属性</strong></p> <ol><li>若 <code>position</code> 的值为 <code>static</code> 或 <code>relative</code>，包含块就是由它的最近的祖先<strong>块容器(a block container)</strong>(如 inline-block、block、list-item element), 和<strong>形成格式化上下文的元素</strong>(如 table container、flex container、grid container、the block container itself)，的<strong>内容区</strong>的边缘组成(the edge of the content box)
+<ul><li>疑问???(content box 指的是什么，与 box-sizing 的关系)</li></ul></li> <li>若 <code>position</code> 的值为 <code>absolute</code>，包含块由它最近的祖先元素(其 <strong>position 的值非 static</strong>，也就是 relative、absolute、fixed、sticky)，的<strong>填充区的边缘</strong>组成</li> <li>若 <code>position</code> 的值为 <code>fixed</code>，包含块由 <strong>视口</strong>(在<strong>连续媒体</strong>的情况下) 或 <strong>页面区域</strong>(在<strong>分页媒体</strong>的情况下)</li> <li>若 <code>position</code> 的值为 <code>absolute</code> 或 <code>fixed</code>，包含块也可能由它最近的祖先元素的<strong>填充区的边缘</strong>组成。最近的祖先元素需要满足的条件如下：
+<ul><li>值不为 <code>none</code> 的 <code>transform</code> 属性 或值不为 <code>none</code> 的 <code>perspective</code> 属性</li> <li>值为 <code>transform</code> 或 <code>perspective</code> 的 <code>will-change</code> 属性</li> <li>值不为 <code>none</code> 属性的 <code>filter</code> 属性</li> <li>特殊：值为 <code>filter</code> 的 <code>will-change</code> 属性(仅在火狐下)</li></ul></li></ol></li> <li><p>注意：根元素 <code>&lt;html&gt;</code> 的包含块是一个被称为 <strong>初始包含块(the initial containing block)</strong> 的 矩形。它具有 视口(连续媒体) 或 页面区域(分页媒体) 的尺寸</p></li></ul> <h2 id="_4-从包含块计算百分比"><a href="#_4-从包含块计算百分比" aria-hidden="true" class="header-anchor">#</a> 4 从包含块计算百分比</h2> <ul><li><p>如上所诉，当一个元素的某些属性的属性值设置为<strong>百分比</strong>时，<strong>计算值</strong>(the computed value) 取决于该元素。</p></li> <li><p>这些属性有<strong>盒模型属性</strong>和<strong>偏移属性</strong>：</p> <ol><li>要计算 <code>height</code>、<code>top</code>、<code>bottom</code> 的百分比值，是通过 <strong>包含块的高</strong> 决定的
+<ul><li>若包含块(包含块的 <code>position</code> 的值为 <code>relative</code> 或 <code>static</code>)的高是依赖于内容的变化，则这些值为 0</li></ul></li> <li>要计算 <code>width</code>、<code>left</code>、<code>right</code>、<code>padding</code>、<code>margin</code> 的百分比值，是通过 <strong>包含块的宽</strong> 决定的</li></ol></li></ul> <h2 id="_5-实践测试"><a href="#_5-实践测试" aria-hidden="true" class="header-anchor">#</a> 5 实践测试</h2> <p>以下示例都使用该 html 代码段</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>This is a paragraph!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="_5-1-示例1"><a href="#_5-1-示例1" aria-hidden="true" class="header-anchor">#</a> 5.1 示例1</h3> <p>场景：自身元素 position 属性 为 static || relative</p> <ol><li><p>css 代码</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> beige<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">section</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 160px<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> lightgray<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">p</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>   <span class="token comment">/* == 400px * .5 = 200px */</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 25%<span class="token punctuation">;</span>  <span class="token comment">/* == 160px * .25 = 40px */</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 5%<span class="token punctuation">;</span>   <span class="token comment">/* == 400px * .05 = 20px */</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 5%<span class="token punctuation">;</span>  <span class="token comment">/* == 400px * .05 = 20px */</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> cyan<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>分析：p 元素的 <code>position</code> 为 <code>static</code>，所以它的包含块为 <code>section</code>。</p> <ul><li>原因：距离最近的祖先元素 <code>section</code> 是一个 <strong>块容器(a block container)</strong></li></ul></li></ol> <h3 id="_5-2-示例2"><a href="#_5-2-示例2" aria-hidden="true" class="header-anchor">#</a> 5.2 示例2</h3> <p>场景：祖先元素不再是块容器</p> <ol><li><p>css 代码</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> beige<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">section</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> lightgray<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">p</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>     <span class="token comment">/* == half the body's width */</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>  <span class="token comment">/* Note: a percentage would be 0 */</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> cyan<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>分析：p 元素的包含块为 <code>body</code> 元素</p> <ul><li>原因：<code>section</code> 不再是一个块容器，并且没有形成一个格式化上下文</li></ul></li></ol> <h3 id="_5-3-示例3"><a href="#_5-3-示例3" aria-hidden="true" class="header-anchor">#</a> 5.3 示例3</h3> <p>场景：自身元素 <code>position</code>为 <code>absolute</code>，且最近的祖先元素的 <code>position</code> 为 <code>absolute</code></p> <ol><li><p>css 代码</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> beige<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">section</span> <span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 160px<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 30px 20px<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> lightgray<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">p</span> <span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>   <span class="token comment">/* == (400px + 20px + 20px) * .5 = 220px */</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 25%<span class="token punctuation">;</span>  <span class="token comment">/* == (160px + 30px + 30px) * .25 = 55px */</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 5%<span class="token punctuation">;</span>   <span class="token comment">/* == (400px + 20px + 20px) * .05 = 22px */</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 5%<span class="token punctuation">;</span>  <span class="token comment">/* == (400px + 20px + 20px) * .05 = 22px */</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> cyan<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>分析：p 元素的包含块为 <code>section</code> 元素</p> <ul><li>原因：自身元素 <code>position</code> 为 <code>absolute</code>，最近的祖先元素 <code>section</code> 的 <code>position</code> 为 <code>absolute</code>.
+<ul><li>p 元素的 <strong>百分比值</strong> 会受到 <strong>包含块的 padding</strong> 影响</li> <li>若 <strong>包含块的 box-sizing</strong> 值设置为 <code>border-box</code>，就没有该问题</li></ul></li></ul></li></ol> <h3 id="_5-4-示例4"><a href="#_5-4-示例4" aria-hidden="true" class="header-anchor">#</a> 5.4 示例4</h3> <p>场景：自身元素的 <code>position</code> 为 <code>fixed</code></p> <ol><li><p>css 代码</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> beige<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">section</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 480px<span class="token punctuation">;</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> lightgray<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">p</span> <span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>   <span class="token comment">/* == (50vw - (width of vertical scrollbar)) */</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>  <span class="token comment">/* == (50vh - (height of horizontal scrollbar)) */</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 5%<span class="token punctuation">;</span>   <span class="token comment">/* == (5vw - (width of vertical scrollbar)) */</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 5%<span class="token punctuation">;</span>  <span class="token comment">/* == (5vw - (width of vertical scrollbar)) */</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> cyan<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>分析：p 元素的包含块为 初始包含块（在屏幕上，即 viewport），尺寸就随浏览器窗框大小变化而变化</p> <ul><li>原因：自身元素的 <code>position</code> 为 <code>fixed</code></li></ul></li></ol> <h3 id="_5-5-示例5"><a href="#_5-5-示例5" aria-hidden="true" class="header-anchor">#</a> 5.5 示例5</h3> <p>场景：自身元素的 <code>position</code> 为 <code>absolute</code>，最近的祖先元素的 <code>transform</code> 的属性值不为 <code>none</code></p> <ol><li><p>css 代码</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> beige<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">section</span> <span class="token punctuation">{</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>0deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 160px<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> lightgray<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">p</span> <span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 80px<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>   <span class="token comment">/* == 200px */</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 25%<span class="token punctuation">;</span>  <span class="token comment">/* == 40px */</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 5%<span class="token punctuation">;</span>   <span class="token comment">/* == 20px */</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 5%<span class="token punctuation">;</span>  <span class="token comment">/* == 20px */</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> cyan<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>分析：p 元素的包含块为 <code>section</code> 元素</p> <ul><li>原因：自身元素的 <code>position</code> 属性值为 <code>absolute</code>，距离最近的祖先元素的 <code>transform</code> 属性值不为 <code>none</code></li></ul></li></ol> <div class="gitalk-container"><div id="gitalk-container"></div></div></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/fewalksideways/FeSidle/edit/gh-pages/css3/布局和包含块.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次提交: </span> <span class="time">5/6/2019, 11:24:59 AM</span></div></div> <!----> </div> <!----></div></div>
+    <script src="/FeSidle/assets/js/app.69001117.js" defer></script><script src="/FeSidle/assets/js/5.3f320389.js" defer></script><script src="/FeSidle/assets/js/7.6dfd3fe3.js" defer></script>
+  </body>
+</html>
